@@ -1,0 +1,175 @@
+:root{
+    --color-titles:#C0272D;
+    --color-regular: #494949;
+    --color-sub-title: #d0858e;
+
+    --font-title: 5rem;
+    --font-text: 2.4rem;
+    --font-subtitle: 3rem;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body{
+    min-height: 100%;
+    
+}
+
+.grid-container > *{
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "section1"
+    "section2"
+    "section3"
+    "section4"
+    "section5"
+    "section6"
+    "footer";
+}
+
+.text-regular{
+    font-size: var(--font-text);
+    color: var(--color-regular);
+}
+
+.titles-text{
+    color: var(--color-titles);
+    font-size: var(--font-title);
+}
+
+.title-subtitle{
+    color: var(--color-sub-title);
+    font-size: var(--font-subtitle);
+
+}
+
+.bar-div{
+    width: 100%;
+    height: 1rem;
+    margin-top: 2rem;
+    /*Gradiante del div*/
+    background: rgb(180, 180, 180);
+    background: linear-gradient(90deg, rgba(176,19,14,1) 0%, rgba(121,18,9,1) 100%);
+
+    box-shadow: 1rem 0.6rem #d8d8d8;
+}
+.header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+}
+
+.header-img{
+    width: 100%;
+    align-self: center;
+    margin: 0;
+}
+
+.section1{
+    grid-area: section1;
+}
+
+.section2{
+    grid-area: section2;
+}
+
+.section3{
+    grid-area: section3;
+    display: flex;
+}
+
+.section3.left{
+    align-items: center;
+    margin: 3.5rem;
+}
+
+img{
+    margin: 3rem;
+    
+}
+.section3_right{
+    align-items: center;
+    margin: auto;
+}
+
+.section4{
+    grid-area: section4;
+    display: flex;
+}
+
+.section4.right{
+    align-items: center;
+    margin: 3.5rem;
+}
+
+.section4_left{
+    align-items: center;
+    margin: auto;
+}
+
+.section5{
+    grid-area: section5;
+}
+
+.container_images{
+    display: flex;
+
+}
+
+.image_section5{
+    width:250px;
+   flex-direction: row;
+   margin: auto;
+
+}
+
+.section6{
+    grid-area: section6;
+}
+
+.footer{
+    grid-area: footer;
+    height: 5%;
+    margin: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content:space-around;
+    flex-direction:row;
+    height: 5%;
+}
+
+.logo_footer{
+    width: 40rem;
+    margin: 0;
+}
+
+a{
+    width: 3rem;
+    list-style: none;
+    font-style: none;
+    background-color: #C0272D;
+}
+
+
